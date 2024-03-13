@@ -1,0 +1,10 @@
+{
+  "name": "move_js_sample",
+  "version": "0.1.0",
+  "description": "A sample JavaScript project that uploads a video via the Move API and returns links to processed 3D motion files.",
+  "homepage": "https://www.move.ai",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security"
+  }
+}
