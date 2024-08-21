@@ -19,7 +19,7 @@ async function run() {
     const videoFileUpload = await uploadVideo(fileReference.data.createFile.presignedUrl, videoFile)
 
     // Create a new 'take' using the take creation GraphQL mutation and the file ID
-    const take = await runQuery(createTakeMutation(fileReference.data.createFile.id))
+    const take = await runQuery(createTakeMutation("foobar", fileReference.data.createFile.id, fileReference.data.createFile.type))
 
     // Create a new job using the job creation GraphQL mutation and the take ID
     const job = await runQuery(createJobMutation(take.data.take.id))

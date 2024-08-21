@@ -6,10 +6,10 @@ mutation CreateFile {
     }
 }`
 
-const createTakeMutation = (fileId) => `
+const createTakeMutation = (deviceLabel, fileId, format) => `
 mutation CreateTake {
-    take: createTake(
-        videoFileId: "${fileId}"
+    take: createSingleCamTake(
+        sources: [{deviceLabel: "${deviceLabel}", fileId: "${fileId}", format: MP4}]
         ) {
         id
     }
@@ -17,7 +17,7 @@ mutation CreateTake {
 
 const createJobMutation = (takeId) => `
 mutation CreateJob {
-    job: createJob(takeId: "${takeId}") { 
+    job: createSingleCamJob(takeId: "${takeId}") { 
         id
         metadata
         state

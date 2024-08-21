@@ -10,6 +10,7 @@ async function runQuery(query) {
       Authorization: process.env.MOVE_API_KEY
     }
   })
+
   if (!response.ok) throw new Error('runQuery: Network response was not ok.')
 
   const result = await response.json()
