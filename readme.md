@@ -3,7 +3,7 @@
 
 This is a simple example of using the Move GraphQL API to process an mp4 video containing 1 human and return motion data.
 
-To run this demo rename .env.example to .env and add your Move API key. To request an API key, visit [https://developers.move.ai/docs/request-an-api-key](https://developers.move.ai/docs/request-an-api-key).
+To run this demo rename .env.example to .env and add your Move API key. To get an API key, signup to Team plan on [https://platform.move.ai](https://platform.move.ai).
 
 Then in the terminal inside the project folder type:
 
@@ -32,9 +32,6 @@ The best quality output is obtained when the following steps are all included in
 - The actor holds an “A pose” for 1 second at the start of the video.
 - Clothing worn by the actor has good contrast to their background.
 - The actor is well lit.
-
-## Learn more
-[https://developers.move.ai/](https://developers.move.ai/)
 
 ## Licence 📥
 The MIT License (MIT)
