@@ -3,7 +3,7 @@
 
 This is a simple example of using the Move GraphQL API to process an mp4 video containing 1 human and return motion data.
 
-To run this demo rename .env.example to .env and add your Move API key. To get an API key, signup to Team plan on [https://platform.move.ai](https://platform.move.ai).
+To run this demo rename .env.example to .env and add your Move API key. To get an API key, signup to Plus or Advanced plan on [https://platform.move.ai](https://platform.move.ai).
 
 Then in the terminal inside the project folder type:
 
